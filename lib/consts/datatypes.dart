@@ -1,0 +1,6 @@
+enum DATATYPES {
+  BOOLEAN,
+  INTEGER,
+  DOUBLE,
+  STRING,
+}
