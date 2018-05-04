@@ -14,10 +14,12 @@ class TransactionInput {
 class Transaction {
   final int version;
   final int unlockTime;
-  final List<TransactionInput> inputs;
-  final List<TransactionOutput> outputs;
-  
-  bool operator== (Transaction a, Transaction b) {
-    if (a.version == b.version && a.)
+  final LinkedList<TransactionInput> inputs;
+  final LinkedList<TransactionOutput> outputs;
+
+  Transaction(Hash fromAddress, Hash toAddress, int amount) {
+    
+    // find inputs by address? to find out balance???
+    // find latest input 
   }
 }

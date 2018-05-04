@@ -39,6 +39,10 @@ class Block extends _BlockHeader {
     timestamp: timestamp,
   );
   
+  addTransaction(Hash txHash) {
+    this.transactionHashes.push(txHash);
+  }
+  
   @override
-  get hashCode => this.blockID;
+  int get hashCode => this.blockID.hashCode;
 }
